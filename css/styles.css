@@ -1,0 +1,53 @@
+@media(min-width: 1024px){
+	*{
+		box-sizing: border-box;
+	
+	}
+	
+	h3{
+		width: 600px;
+		margin: auto;
+	}
+	
+	a.images{
+		position: relative;
+		top: 25px;
+		left: 265px;
+		
+		
+		
+	}
+	.images{
+	font-size: 1.25em;
+	
+	}
+	input#search{
+		
+		height: 41px;
+		border-radius: 5px 5px 5px 5px;
+		font-size: 1.1em;
+		text-indent: 15px;
+		position: relative;
+		top:25px;
+		left: 295px;
+		border: 1px solid #C9C4C4;
+		
+	}
+	input#search::placeholder{
+		text-indent: 15px;
+		color: #7F7F7F;
+		font-size: 20px;
+		
+	}
+	.lightgallery_images_img{
+		margin:40px 40px 0px 0px;
+		
+	}
+	div#lightgallery{
+		width: 900px;
+		margin: auto;
+		position: relative;
+		top:37px;
+		left: 30px;
+	}
+}
