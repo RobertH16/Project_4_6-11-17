@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+  	<link rel="stylesheet" href="css/styles.css">
+	 <link type="text/css" rel="stylesheet" href="css/lightGallery.css"/> 
+
+
+   	
+    <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lobster+Two|Open+Sans" rel="stylesheet">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	 <!-- jQuery version must be >= 1.8.0; -->
+    <script src="jquery.min.js"></script>
+
+    <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+    <script src="js/lightgallery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+        <script src="js/lightgallery.js"></script>
+        <script src="js/lg-fullscreen.js"></script>
+        <script src="js/lg-thumbnail.js"></script>
+        <script src="js/lg-video.js"></script>
+        <script src="js/lg-autoplay.js"></script>
+        <script src="js/lg-zoom.js"></script>
+        <script src="js/lg-hash.js"></script>
+        <script src="js/lg-pager.js"></script>
+        <script src="js/jquery.mousewheel.min.js"></script>
+    <!-- lightgallery plugins -->
+    <script src="js/lg-thumbnail.min.js"></script>
+    <script src="js/lg-fullscreen.min.js"></script>
+	<script src="js/lg-thumbnail.js"></script>
+	<script src="js/lg-zoom.js"></script>
+	<script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.hideseek.min.js"></script>
+	
+	<script>
+	$(document).ready(function(){
+    $("#lightgallery").lightGallery({
+		showThumbByDefault:false,
+		toogleThumb:false
+	
+
+	});	
+	$('li').lightGallery({
+	showThumbByDefault:false,
+		toogleThumb:false
+	});
+	});
+
+</script>
+
+<script>
+$(document).ready(function(){
+
+$('#search').hideseek();
+	
+	
+
+	});
+	</script>
+	<script>
+	$(document).ready(function(){
+		$("#search[type='text']").keypress(function(e){
+		if(e.which == 13){
+		
+		 $(this).attr("disabled", "disabled");
+		 e.preventDefault(); 
+		 $(this).removeAttr("disabled");
+		 $(this).show();
+		}
+		
+	});
+	return this;
+	});
+	
+
+	</script>
+
+	
+
+	</head>
+	<body>
+	<form>
+	<input id="search" size="41" name="search" placeholder="Search" type="text" data-list=".list"  data-toggle="hideseek" onclick="formFilter()">
+	
+	<ul class="list">
+	
+  <li style="display:none; list-style:none;"><a href="photos/01.jpg"class="images"
+  data-sub-html="<h3>I love hay bales. Took this snap on a drive through the countryside past some straw fields.</h3>"> hay bales</a></li>
+  <li style="display:none; list-style:none;"><a href="photos/02.jpg"class="images"data-sub-html="<h3>The lake was so calm today. We had a great view of the snow on the mountains from here.</h3>">lake </a></li>
+  <li style="display:none; list-style:none;"><a href="photos/03.jpg"class="images"data-sub-html="<h3>I hiked to the top of the mountain and got this picture of the canyon and trees below.</h3>">mountain </a></li>
+  <li style="display:none; list-style:none;"><a href="photos/04.jpg"class="images"data-sub-html="<h3>It was amazing to see an iceberg up close, it was so cold but didn’t snow today. </h3>">iceberg</a></li>
+  <li style="display:none; list-style:none;"><a href="photos/05.jpg"class="images"data-sub-html="<h3>The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.</h3>">red cliff canyons.</a></li>
+  <li style="display:none; list-style:none;"><a href="photos/06.jpg"class="images"data-sub-html="<h3>Fall is coming, I love when the leaves on the trees start to change color.</h3>">Fall.</a></li>
+  <li style="display:none; list-style:none;"><a href="photos/07.jpg"class="images"data-sub-html="<h3>I drove past this plantation yesterday, everything is so green!</h3>">plantation.</a></li>
+  <li style="display:none; list-style:none;"><a href="photos/08.jpg"class="images"data-sub-html="<h3>My summer vacation to the Oregon Coast. I love the sandy dunes!</h3>">sandy dunes!</a></li>
+  <li style="display:none; list-style:none;"><a href="photos/09.jpg"class="images"data-sub-html="<h3>We enjoyed a quiet stroll down this countryside lane. </h3>">countryside lane.</a></li>
+  <li style="display:none; list-style:none;"><a href="photos/10.jpg"class="images"data-sub-html="<h3>Sunset at the coast! The sky turned a lovely shade of orange.</h3>">Sunset at the coast!</a></li>
+  <li style="display:none; list-style:none;"><a href="photos/11.jpg"class="images"data-sub-html="<h3>I did a tour of a cave today and the view of the landscape below was breathtaking.</h3>">cave.</a></li>
+  <li style="display:none; list-style:none;"><a href="photos/12.jpg"class="images"data-sub-html="<h3>I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.</h3>">meadow of bluebells.</a></li>
+</ul>
+
+	</form>
+
+			<div id="lightgallery">
+ <a href="photos/01.jpg" class="lightgallery_images" data-sub-html="<h3>I love hay bales. Took this snap on a drive through the countryside past some straw fields.</h3>">
+     <img src="thumbnails/01.jpg" class="lightgallery_images_img" height="175" width="175" />
+ </a>
+  <a href="photos/02.jpg" class="lightgallery_images" data-sub-html="<h3>The lake was so calm today. We had a great view of the snow on the mountains from here.</h3>" >
+     <img src="thumbnails/02.jpg" class="lightgallery_images_img" height="175" width="175" />
+ </a>
+ <a href="photos/03.jpg" class="lightgallery_images" data-sub-html="<h3>I hiked to the top of the mountain and got this picture of the canyon and trees below.</h3>" class="image3">
+     <img src="thumbnails/03.jpg" class="lightgallery_images_img" height="175" width="175" />
+ </a>
+ <a href="photos/04.jpg" class="lightgallery_images" data-sub-html="<h3>It was amazing to see an iceberg up close, it was so cold but didn’t snow today. </h3>">
+     <img src="thumbnails/04.jpg" class="lightgallery_images_img" height="175" width="175" />
+ </a>
+ <a href="photos/05.jpg" class="lightgallery_images" data-sub-html="<h3>The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.</h3>" >
+     <img src="thumbnails/05.jpg" class="lightgallery_images_img" height="175" width="175" />
+ </a>
+ <a href="photos/06.jpg"  class="lightgallery_images" data-sub-html="<h3>Fall is coming, I love when the leaves on the trees start to change color.</h3>">
+     <img src="thumbnails/06.jpg" class="lightgallery_images_img" height="175" width="175" />
+ </a>
+ <a href="photos/07.jpg" class="lightgallery_images" data-sub-html="<h3>I drove past this plantation yesterday, everything is so green!</h3>">
+     <img src="thumbnails/07.jpg" class="lightgallery_images_img" height="175" width="175" />
+ </a>
+ <a href="photos/08.jpg" class="lightgallery_images" data-sub-html="<h3>My summer vacation to the Oregon Coast. I love the sandy dunes!</h3>">
+     <img src="thumbnails/08.jpg" class="lightgallery_images_img" height="175" width="175" />
+ </a>
+ <a href="photos/09.jpg" class="lightgallery_images" data-sub-html="<h3>We enjoyed a quiet stroll down this countryside lane. </h3>">
+     <img src="thumbnails/09.jpg" class="lightgallery_images_img" height="175" width="175" />
+ </a>
+ <a href="photos/10.jpg" class="lightgallery_images" data-sub-html="<h3>Sunset at the coast! The sky turned a lovely shade of orange.</h3>">
+     <img src="thumbnails/10.jpg" class="lightgallery_images_img" height="175" width="175" />
+ </a>
+ <a href="photos/11.jpg" class="lightgallery_images" data-sub-html="<h3>I did a tour of a cave today and the view of the landscape below was breathtaking.</h3>">
+     <img src="thumbnails/11.jpg" class="lightgallery_images_img" height="175" width="175" />
+ </a>
+ <a href="photos/12.jpg" class="lightgallery_images" data-sub-html="<h3>I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.</h3>" >
+     <img src="thumbnails/12.jpg" class="lightgallery_images_img" height="175" width="175" />
+ </a>
+ 
+
+</div>
+		
+	
+
+	  </body>
+	  </html>
